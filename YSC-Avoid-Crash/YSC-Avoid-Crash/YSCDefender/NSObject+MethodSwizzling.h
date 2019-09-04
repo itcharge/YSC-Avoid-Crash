@@ -28,4 +28,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+// 判断是否是系统类
+static inline BOOL isSystemClass(Class cls) {
+    BOOL isSystem = NO;
+    NSString *className = NSStringFromClass(cls);
+    if ([className hasPrefix:@"NS"] || [className hasPrefix:@"__NS"] || [className hasPrefix:@"OS_xpc"]) {
+        isSystem = YES;
+        return isSystem;
+    }
+    NSBundle *mainBundle = [NSBundle bundleForClass:cls];
+    if (mainBundle == [NSBundle mainBundle]) {
+        isSystem = NO;
+    }else{
+        isSystem = YES;
+    }
+    return isSystem;
+}
 NS_ASSUME_NONNULL_END

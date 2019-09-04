@@ -7,23 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		950630B0230AAA18001E5349 /* KVOCrashObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 950630AF230AAA18001E5349 /* KVOCrashObjc.m */; };
+		9534591A230FBF6C00767E14 /* KVOCrashObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 95345919230FBF6C00767E14 /* KVOCrashObject.m */; };
+		9534592D231677CB00767E14 /* KVCCrashObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9534592C231677CB00767E14 /* KVCCrashObject.m */; };
+		953459392316AEBD00767E14 /* NSObject+SelectorDefender.m in Sources */ = {isa = PBXBuildFile; fileRef = 953459322316AEBC00767E14 /* NSObject+SelectorDefender.m */; };
+		9534593A2316AEBD00767E14 /* NSObject+MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 953459362316AEBC00767E14 /* NSObject+MethodSwizzling.m */; };
+		9534593B2316AEBD00767E14 /* NSObject+KVODefender.m in Sources */ = {isa = PBXBuildFile; fileRef = 953459372316AEBD00767E14 /* NSObject+KVODefender.m */; };
+		9534593C2316AEBD00767E14 /* NSObject+KVCDefender.m in Sources */ = {isa = PBXBuildFile; fileRef = 953459382316AEBD00767E14 /* NSObject+KVCDefender.m */; };
+		9534594D231DF76900767E14 /* NotificationReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 9534594C231DF76900767E14 /* NotificationReceiver.m */; };
+		95345964231F52B700767E14 /* TestUnrecognizedSelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95345963231F52B700767E14 /* TestUnrecognizedSelVC.m */; };
+		95345967231F52D000767E14 /* TestKVOCrashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95345966231F52D000767E14 /* TestKVOCrashVC.m */; };
+		9534596A231F52E900767E14 /* TestKVCCrashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95345969231F52E900767E14 /* TestKVCCrashVC.m */; };
+		9534596D231F530100767E14 /* TestNotificationCrashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9534596C231F530100767E14 /* TestNotificationCrashVC.m */; };
+		95345970231F531E00767E14 /* TestTimerCrashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9534596F231F531E00767E14 /* TestTimerCrashVC.m */; };
+		95345973231F533200767E14 /* TestContainersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95345972231F533200767E14 /* TestContainersVC.m */; };
+		95345976231F534400767E14 /* TestNullVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95345975231F534400767E14 /* TestNullVC.m */; };
+		95345979231F57EE00767E14 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95345978231F57EE00767E14 /* BaseViewController.m */; };
+		95345984231F619A00767E14 /* SelectorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 95345983231F619A00767E14 /* SelectorObject.m */; };
 		953F56E223055D1A00710599 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 953F56E123055D1A00710599 /* AppDelegate.m */; };
 		953F56E523055D1A00710599 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 953F56E423055D1A00710599 /* ViewController.m */; };
 		953F56E823055D1A00710599 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953F56E623055D1A00710599 /* Main.storyboard */; };
 		953F56EA23055D1B00710599 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953F56E923055D1B00710599 /* Assets.xcassets */; };
 		953F56ED23055D1B00710599 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953F56EB23055D1B00710599 /* LaunchScreen.storyboard */; };
 		953F56F023055D1B00710599 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 953F56EF23055D1B00710599 /* main.m */; };
-		953F56FB2306500200710599 /* YSCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 953F56FA2306500200710599 /* YSCObject.m */; };
-		953F5707230A7A7100710599 /* NSObject+MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 953F5706230A7A7100710599 /* NSObject+MethodSwizzling.m */; };
-		953F570A230A7BC300710599 /* NSObject+SelectorDefender.m in Sources */ = {isa = PBXBuildFile; fileRef = 953F5709230A7BC300710599 /* NSObject+SelectorDefender.m */; };
-		95B929E6230D269D0078E7B6 /* NSObject+KVODefender.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B929E4230D269D0078E7B6 /* NSObject+KVODefender.m */; };
-		95B929F1230E46730078E7B6 /* NSObject+KVODefenderEasy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B929EF230E46730078E7B6 /* NSObject+KVODefenderEasy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		950630AE230AAA18001E5349 /* KVOCrashObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOCrashObjc.h; sourceTree = "<group>"; };
-		950630AF230AAA18001E5349 /* KVOCrashObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOCrashObjc.m; sourceTree = "<group>"; };
+		95345918230FBF6C00767E14 /* KVOCrashObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOCrashObject.h; sourceTree = "<group>"; };
+		95345919230FBF6C00767E14 /* KVOCrashObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOCrashObject.m; sourceTree = "<group>"; };
+		9534592B231677CB00767E14 /* KVCCrashObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCCrashObject.h; sourceTree = "<group>"; };
+		9534592C231677CB00767E14 /* KVCCrashObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCCrashObject.m; sourceTree = "<group>"; };
+		953459312316AEBC00767E14 /* NSObject+MethodSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MethodSwizzling.h"; sourceTree = "<group>"; };
+		953459322316AEBC00767E14 /* NSObject+SelectorDefender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SelectorDefender.m"; sourceTree = "<group>"; };
+		953459332316AEBC00767E14 /* NSObject+SelectorDefender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SelectorDefender.h"; sourceTree = "<group>"; };
+		953459342316AEBC00767E14 /* NSObject+KVODefender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVODefender.h"; sourceTree = "<group>"; };
+		953459352316AEBC00767E14 /* NSObject+KVCDefender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVCDefender.h"; sourceTree = "<group>"; };
+		953459362316AEBC00767E14 /* NSObject+MethodSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodSwizzling.m"; sourceTree = "<group>"; };
+		953459372316AEBD00767E14 /* NSObject+KVODefender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVODefender.m"; sourceTree = "<group>"; };
+		953459382316AEBD00767E14 /* NSObject+KVCDefender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVCDefender.m"; sourceTree = "<group>"; };
+		9534594B231DF76900767E14 /* NotificationReceiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationReceiver.h; sourceTree = "<group>"; };
+		9534594C231DF76900767E14 /* NotificationReceiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationReceiver.m; sourceTree = "<group>"; };
+		95345962231F52B700767E14 /* TestUnrecognizedSelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestUnrecognizedSelVC.h; sourceTree = "<group>"; };
+		95345963231F52B700767E14 /* TestUnrecognizedSelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestUnrecognizedSelVC.m; sourceTree = "<group>"; };
+		95345965231F52D000767E14 /* TestKVOCrashVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestKVOCrashVC.h; sourceTree = "<group>"; };
+		95345966231F52D000767E14 /* TestKVOCrashVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestKVOCrashVC.m; sourceTree = "<group>"; };
+		95345968231F52E900767E14 /* TestKVCCrashVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestKVCCrashVC.h; sourceTree = "<group>"; };
+		95345969231F52E900767E14 /* TestKVCCrashVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestKVCCrashVC.m; sourceTree = "<group>"; };
+		9534596B231F530100767E14 /* TestNotificationCrashVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNotificationCrashVC.h; sourceTree = "<group>"; };
+		9534596C231F530100767E14 /* TestNotificationCrashVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNotificationCrashVC.m; sourceTree = "<group>"; };
+		9534596E231F531E00767E14 /* TestTimerCrashVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTimerCrashVC.h; sourceTree = "<group>"; };
+		9534596F231F531E00767E14 /* TestTimerCrashVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTimerCrashVC.m; sourceTree = "<group>"; };
+		95345971231F533200767E14 /* TestContainersVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestContainersVC.h; sourceTree = "<group>"; };
+		95345972231F533200767E14 /* TestContainersVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestContainersVC.m; sourceTree = "<group>"; };
+		95345974231F534400767E14 /* TestNullVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNullVC.h; sourceTree = "<group>"; };
+		95345975231F534400767E14 /* TestNullVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNullVC.m; sourceTree = "<group>"; };
+		95345977231F57EE00767E14 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		95345978231F57EE00767E14 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		9534597E231F5C2700767E14 /* BaseDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseDefine.h; sourceTree = "<group>"; };
+		95345982231F619A00767E14 /* SelectorObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectorObject.h; sourceTree = "<group>"; };
+		95345983231F619A00767E14 /* SelectorObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectorObject.m; sourceTree = "<group>"; };
 		953F56DD23055D1A00710599 /* YSC-Avoid-Crash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YSC-Avoid-Crash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		953F56E023055D1A00710599 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		953F56E123055D1A00710599 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,16 +75,6 @@
 		953F56EC23055D1B00710599 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		953F56EE23055D1B00710599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		953F56EF23055D1B00710599 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		953F56F92306500200710599 /* YSCObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSCObject.h; sourceTree = "<group>"; };
-		953F56FA2306500200710599 /* YSCObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSCObject.m; sourceTree = "<group>"; };
-		953F5705230A7A7100710599 /* NSObject+MethodSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MethodSwizzling.h"; sourceTree = "<group>"; };
-		953F5706230A7A7100710599 /* NSObject+MethodSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodSwizzling.m"; sourceTree = "<group>"; };
-		953F5708230A7BC300710599 /* NSObject+SelectorDefender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SelectorDefender.h"; sourceTree = "<group>"; };
-		953F5709230A7BC300710599 /* NSObject+SelectorDefender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SelectorDefender.m"; sourceTree = "<group>"; };
-		95B929E4230D269D0078E7B6 /* NSObject+KVODefender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVODefender.m"; sourceTree = "<group>"; };
-		95B929E5230D269D0078E7B6 /* NSObject+KVODefender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVODefender.h"; sourceTree = "<group>"; };
-		95B929EF230E46730078E7B6 /* NSObject+KVODefenderEasy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVODefenderEasy.m"; sourceTree = "<group>"; };
-		95B929F0230E46730078E7B6 /* NSObject+KVODefenderEasy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVODefenderEasy.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +88,117 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95345957231F4EC900767E14 /* YSCDefender */ = {
+			isa = PBXGroup;
+			children = (
+				953459312316AEBC00767E14 /* NSObject+MethodSwizzling.h */,
+				953459362316AEBC00767E14 /* NSObject+MethodSwizzling.m */,
+				953459332316AEBC00767E14 /* NSObject+SelectorDefender.h */,
+				953459322316AEBC00767E14 /* NSObject+SelectorDefender.m */,
+				953459342316AEBC00767E14 /* NSObject+KVODefender.h */,
+				953459372316AEBD00767E14 /* NSObject+KVODefender.m */,
+				953459352316AEBC00767E14 /* NSObject+KVCDefender.h */,
+				953459382316AEBD00767E14 /* NSObject+KVCDefender.m */,
+			);
+			path = YSCDefender;
+			sourceTree = "<group>";
+		};
+		95345958231F4EF000767E14 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				9534595B231F51FE00767E14 /* Unrecognized Selector */,
+				9534595C231F521100767E14 /* KVO */,
+				9534595D231F521500767E14 /* KVC */,
+				9534595E231F521F00767E14 /* Notification */,
+				9534595F231F523100767E14 /* Timer */,
+				95345960231F523D00767E14 /* Containers */,
+				95345961231F525100767E14 /* NSNull */,
+				9534597A231F57F400767E14 /* Base */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		9534595B231F51FE00767E14 /* Unrecognized Selector */ = {
+			isa = PBXGroup;
+			children = (
+				95345982231F619A00767E14 /* SelectorObject.h */,
+				95345983231F619A00767E14 /* SelectorObject.m */,
+				95345962231F52B700767E14 /* TestUnrecognizedSelVC.h */,
+				95345963231F52B700767E14 /* TestUnrecognizedSelVC.m */,
+			);
+			path = "Unrecognized Selector";
+			sourceTree = "<group>";
+		};
+		9534595C231F521100767E14 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				95345918230FBF6C00767E14 /* KVOCrashObject.h */,
+				95345919230FBF6C00767E14 /* KVOCrashObject.m */,
+				95345965231F52D000767E14 /* TestKVOCrashVC.h */,
+				95345966231F52D000767E14 /* TestKVOCrashVC.m */,
+			);
+			path = KVO;
+			sourceTree = "<group>";
+		};
+		9534595D231F521500767E14 /* KVC */ = {
+			isa = PBXGroup;
+			children = (
+				9534592B231677CB00767E14 /* KVCCrashObject.h */,
+				9534592C231677CB00767E14 /* KVCCrashObject.m */,
+				95345968231F52E900767E14 /* TestKVCCrashVC.h */,
+				95345969231F52E900767E14 /* TestKVCCrashVC.m */,
+			);
+			path = KVC;
+			sourceTree = "<group>";
+		};
+		9534595E231F521F00767E14 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				9534594B231DF76900767E14 /* NotificationReceiver.h */,
+				9534594C231DF76900767E14 /* NotificationReceiver.m */,
+				9534596B231F530100767E14 /* TestNotificationCrashVC.h */,
+				9534596C231F530100767E14 /* TestNotificationCrashVC.m */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		9534595F231F523100767E14 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				9534596E231F531E00767E14 /* TestTimerCrashVC.h */,
+				9534596F231F531E00767E14 /* TestTimerCrashVC.m */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		95345960231F523D00767E14 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				95345971231F533200767E14 /* TestContainersVC.h */,
+				95345972231F533200767E14 /* TestContainersVC.m */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
+		95345961231F525100767E14 /* NSNull */ = {
+			isa = PBXGroup;
+			children = (
+				95345974231F534400767E14 /* TestNullVC.h */,
+				95345975231F534400767E14 /* TestNullVC.m */,
+			);
+			path = NSNull;
+			sourceTree = "<group>";
+		};
+		9534597A231F57F400767E14 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				95345977231F57EE00767E14 /* BaseViewController.h */,
+				95345978231F57EE00767E14 /* BaseViewController.m */,
+				9534597E231F5C2700767E14 /* BaseDefine.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		953F56D423055D1A00710599 = {
 			isa = PBXGroup;
 			children = (
@@ -76,18 +218,8 @@
 		953F56DF23055D1A00710599 /* YSC-Avoid-Crash */ = {
 			isa = PBXGroup;
 			children = (
-				953F56F92306500200710599 /* YSCObject.h */,
-				953F56FA2306500200710599 /* YSCObject.m */,
-				950630AE230AAA18001E5349 /* KVOCrashObjc.h */,
-				950630AF230AAA18001E5349 /* KVOCrashObjc.m */,
-				953F5705230A7A7100710599 /* NSObject+MethodSwizzling.h */,
-				953F5706230A7A7100710599 /* NSObject+MethodSwizzling.m */,
-				953F5708230A7BC300710599 /* NSObject+SelectorDefender.h */,
-				953F5709230A7BC300710599 /* NSObject+SelectorDefender.m */,
-				95B929E5230D269D0078E7B6 /* NSObject+KVODefender.h */,
-				95B929E4230D269D0078E7B6 /* NSObject+KVODefender.m */,
-				95B929F0230E46730078E7B6 /* NSObject+KVODefenderEasy.h */,
-				95B929EF230E46730078E7B6 /* NSObject+KVODefenderEasy.m */,
+				95345958231F4EF000767E14 /* Examples */,
+				95345957231F4EC900767E14 /* YSCDefender */,
 				953F56E023055D1A00710599 /* AppDelegate.h */,
 				953F56E123055D1A00710599 /* AppDelegate.m */,
 				953F56E323055D1A00710599 /* ViewController.h */,
@@ -171,15 +303,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				953F570A230A7BC300710599 /* NSObject+SelectorDefender.m in Sources */,
-				95B929F1230E46730078E7B6 /* NSObject+KVODefenderEasy.m in Sources */,
-				95B929E6230D269D0078E7B6 /* NSObject+KVODefender.m in Sources */,
-				950630B0230AAA18001E5349 /* KVOCrashObjc.m in Sources */,
+				95345970231F531E00767E14 /* TestTimerCrashVC.m in Sources */,
+				9534591A230FBF6C00767E14 /* KVOCrashObject.m in Sources */,
 				953F56E523055D1A00710599 /* ViewController.m in Sources */,
+				9534593A2316AEBD00767E14 /* NSObject+MethodSwizzling.m in Sources */,
 				953F56F023055D1B00710599 /* main.m in Sources */,
-				953F56FB2306500200710599 /* YSCObject.m in Sources */,
+				9534594D231DF76900767E14 /* NotificationReceiver.m in Sources */,
+				95345984231F619A00767E14 /* SelectorObject.m in Sources */,
 				953F56E223055D1A00710599 /* AppDelegate.m in Sources */,
-				953F5707230A7A7100710599 /* NSObject+MethodSwizzling.m in Sources */,
+				9534592D231677CB00767E14 /* KVCCrashObject.m in Sources */,
+				9534593C2316AEBD00767E14 /* NSObject+KVCDefender.m in Sources */,
+				9534596D231F530100767E14 /* TestNotificationCrashVC.m in Sources */,
+				95345967231F52D000767E14 /* TestKVOCrashVC.m in Sources */,
+				9534596A231F52E900767E14 /* TestKVCCrashVC.m in Sources */,
+				95345964231F52B700767E14 /* TestUnrecognizedSelVC.m in Sources */,
+				95345973231F533200767E14 /* TestContainersVC.m in Sources */,
+				953459392316AEBD00767E14 /* NSObject+SelectorDefender.m in Sources */,
+				9534593B2316AEBD00767E14 /* NSObject+KVODefender.m in Sources */,
+				95345976231F534400767E14 /* TestNullVC.m in Sources */,
+				95345979231F57EE00767E14 /* BaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "YSC-Avoid-Crash/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +484,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "YSC-Avoid-Crash/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

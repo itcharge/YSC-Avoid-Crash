@@ -1,8 +1,8 @@
 //
-//  KVOCrashObjc.h
+//  KVCCrashObject.h
 //  YSC-Avoid-Crash
 //
-//  Created by WalkingBoy on 2019/8/19.
+//  Created by WalkingBoy on 2019/8/28.
 //  Copyright © 2019 bujige. All rights reserved.
 //
 
@@ -10,9 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KVOCrashObjc : NSObject
+@interface KVCCrashObject : NSObject
 
 @property (nonatomic, copy) NSString *name;
+
+@property (nonatomic, assign) NSInteger age;
 
 @end
 

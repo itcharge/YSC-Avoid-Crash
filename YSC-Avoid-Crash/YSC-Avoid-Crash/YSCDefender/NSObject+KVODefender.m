@@ -10,23 +10,6 @@
 #import "NSObject+MethodSwizzling.h"
 #import <objc/runtime.h>
 
-// 判断是否是系统类
-static inline BOOL IsSystemClass(Class cls){
-    BOOL isSystem = NO;
-    NSString *className = NSStringFromClass(cls);
-    if ([className hasPrefix:@"NS"] || [className hasPrefix:@"__NS"] || [className hasPrefix:@"OS_xpc"]) {
-        isSystem = YES;
-        return isSystem;
-    }
-    NSBundle *mainBundle = [NSBundle bundleForClass:cls];
-    if (mainBundle == [NSBundle mainBundle]) {
-        isSystem = NO;
-    }else{
-        isSystem = YES;
-    }
-    return isSystem;
-}
-
 
 #pragma mark - YSCKVOProxy 相关
 
@@ -219,7 +202,7 @@ static void *KVODefenderKey = &KVODefenderKey;
                 options:(NSKeyValueObservingOptions)options
                 context:(void *)context {
     
-    if (!IsSystemClass(self.class)) {
+    if (!isSystemClass(self.class)) {
         objc_setAssociatedObject(self, KVODefenderKey, KVODefenderValue, OBJC_ASSOCIATION_RETAIN);
         if ([self.yscKVOProxy addInfoToMapWithObserver:observer forKeyPath:keyPath options:options context:context]) {
             // 如果添加 KVO 信息操作成功，则调用系统添加方法
@@ -241,7 +224,7 @@ static void *KVODefenderKey = &KVODefenderKey;
                 forKeyPath:(NSString *)keyPath
                    context:(void *)context {
     
-    if (!IsSystemClass(self.class)) {
+    if (!isSystemClass(self.class)) {
         if ([self.yscKVOProxy removeInfoInMapWithObserver:observer forKeyPath:keyPath context:context]) {
             // 如果移除 KVO 信息操作成功，则调用系统移除方法
             [self ysc_removeObserver:self.yscKVOProxy forKeyPath:keyPath context:context];
@@ -260,7 +243,7 @@ static void *KVODefenderKey = &KVODefenderKey;
 - (void)ysc_removeObserver:(NSObject *)observer
                 forKeyPath:(NSString *)keyPath {
     
-    if (!IsSystemClass(self.class)) {
+    if (!isSystemClass(self.class)) {
         if ([self.yscKVOProxy removeInfoInMapWithObserver:observer forKeyPath:keyPath]) {
             // 如果移除 KVO 信息操作成功，则调用系统移除方法
             [self ysc_removeObserver:self.yscKVOProxy forKeyPath:keyPath];
@@ -279,7 +262,7 @@ static void *KVODefenderKey = &KVODefenderKey;
 // 自定义 dealloc 实现方法
 - (void)ysc_kvodealloc {
     @autoreleasepool {
-        if (!IsSystemClass(self.class)) {
+        if (!isSystemClass(self.class)) {
             NSString *value = (NSString *)objc_getAssociatedObject(self, KVODefenderKey);
             if ([value isEqualToString:KVODefenderValue]) {
                 NSArray *keyPaths =  [self.yscKVOProxy getAllKeyPaths];
@@ -296,7 +279,6 @@ static void *KVODefenderKey = &KVODefenderKey;
             }
         }
     }
-    
     
     [self ysc_kvodealloc];
 }
