@@ -231,7 +231,7 @@ static void *KVODefenderKey = &KVODefenderKey;
         } else {
             // 移除 KVO 信息操作失败：移除了未注册的观察者
             NSString *className = NSStringFromClass(self.class) == nil ? @"" : NSStringFromClass(self.class);
-            NSString *reason = [NSString stringWithFormat:@"KVO Warning : Cannot remove an observer %@ for the key path '%@' from %@ , because it is not registered as an observer", observer, keyPath, className];
+            NSString *reason = [NSString stringWithFormat:@"*** Crash Message: Cannot remove an observer %@ for the key path '%@' from %@ , because it is not registered as an observer ***", observer, keyPath, className];
             NSLog(@"%@",reason);
         }
     } else {
@@ -250,7 +250,7 @@ static void *KVODefenderKey = &KVODefenderKey;
         } else {
             // 移除 KVO 信息操作失败：移除了未注册的观察者
             NSString *className = NSStringFromClass(self.class) == nil ? @"" : NSStringFromClass(self.class);
-            NSString *reason = [NSString stringWithFormat:@"KVO Warning : Cannot remove an observer %@ for the key path '%@' from %@ , because it is not registered as an observer", observer, keyPath, className];
+            NSString *reason = [NSString stringWithFormat:@"*** Crash Message: Cannot remove an observer %@ for the key path '%@' from %@ , because it is not registered as an observer ***", observer, keyPath, className];
             NSLog(@"%@",reason);
         }
     } else {
@@ -268,7 +268,7 @@ static void *KVODefenderKey = &KVODefenderKey;
                 NSArray *keyPaths =  [self.yscKVOProxy getAllKeyPaths];
                 // 被观察者在 dealloc 时仍然注册着 KVO
                 if (keyPaths.count > 0) {
-                    NSString *reason = [NSString stringWithFormat:@"KVO Warning : An instance %@ was deallocated while key value observers were still registered with it. The Keypaths is:'%@'", self, [keyPaths componentsJoinedByString:@","]];
+                    NSString *reason = [NSString stringWithFormat:@"*** Crash Message: An instance %@ was deallocated while key value observers were still registered with it. The Keypaths is:'%@' ***", self, [keyPaths componentsJoinedByString:@","]];
                     NSLog(@"%@",reason);
                 }
                 

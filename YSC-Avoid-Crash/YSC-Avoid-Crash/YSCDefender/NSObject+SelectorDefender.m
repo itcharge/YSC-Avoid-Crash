@@ -56,7 +56,7 @@
             NSString *errClassName = NSStringFromClass([self class]);
             NSString *errSel = NSStringFromSelector(aSelector);
         
-            NSLog(@"Crash Message: +[%@ %@]: unrecognized selector sent to class %p",errClassName, errSel, self);
+            NSLog(@"*** Crash Message: +[%@ %@]: unrecognized selector sent to class %p ***",errClassName, errSel, self);
             
             
             NSString *className = @"CrachClass";
@@ -108,7 +108,7 @@
             NSString *errClassName = NSStringFromClass([self class]);
             NSString *errSel = NSStringFromSelector(aSelector);
     
-            NSLog(@"Crash Message: -[%@ %@]: unrecognized selector sent to instance %p",errClassName, errSel, self);
+            NSLog(@"*** Crash Message: -[%@ %@]: unrecognized selector sent to instance %p ***",errClassName, errSel, self);
             
             NSString *className = @"CrachClass";
             Class cls = NSClassFromString(className);

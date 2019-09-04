@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		9534591A230FBF6C00767E14 /* KVOCrashObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 95345919230FBF6C00767E14 /* KVOCrashObject.m */; };
 		9534592D231677CB00767E14 /* KVCCrashObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9534592C231677CB00767E14 /* KVCCrashObject.m */; };
-		953459392316AEBD00767E14 /* NSObject+SelectorDefender.m in Sources */ = {isa = PBXBuildFile; fileRef = 953459322316AEBC00767E14 /* NSObject+SelectorDefender.m */; };
-		9534593A2316AEBD00767E14 /* NSObject+MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 953459362316AEBC00767E14 /* NSObject+MethodSwizzling.m */; };
-		9534593B2316AEBD00767E14 /* NSObject+KVODefender.m in Sources */ = {isa = PBXBuildFile; fileRef = 953459372316AEBD00767E14 /* NSObject+KVODefender.m */; };
-		9534593C2316AEBD00767E14 /* NSObject+KVCDefender.m in Sources */ = {isa = PBXBuildFile; fileRef = 953459382316AEBD00767E14 /* NSObject+KVCDefender.m */; };
 		9534594D231DF76900767E14 /* NotificationReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 9534594C231DF76900767E14 /* NotificationReceiver.m */; };
 		95345964231F52B700767E14 /* TestUnrecognizedSelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95345963231F52B700767E14 /* TestUnrecognizedSelVC.m */; };
 		95345967231F52D000767E14 /* TestKVOCrashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95345966231F52D000767E14 /* TestKVOCrashVC.m */; };
@@ -23,6 +19,10 @@
 		95345976231F534400767E14 /* TestNullVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95345975231F534400767E14 /* TestNullVC.m */; };
 		95345979231F57EE00767E14 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95345978231F57EE00767E14 /* BaseViewController.m */; };
 		95345984231F619A00767E14 /* SelectorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 95345983231F619A00767E14 /* SelectorObject.m */; };
+		9534598D231F791B00767E14 /* NSObject+SelectorDefender.m in Sources */ = {isa = PBXBuildFile; fileRef = 95345986231F791B00767E14 /* NSObject+SelectorDefender.m */; };
+		9534598E231F791B00767E14 /* NSObject+KVCDefender.m in Sources */ = {isa = PBXBuildFile; fileRef = 95345987231F791B00767E14 /* NSObject+KVCDefender.m */; };
+		9534598F231F791B00767E14 /* NSObject+KVODefender.m in Sources */ = {isa = PBXBuildFile; fileRef = 95345988231F791B00767E14 /* NSObject+KVODefender.m */; };
+		95345990231F791B00767E14 /* NSObject+MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 9534598A231F791B00767E14 /* NSObject+MethodSwizzling.m */; };
 		953F56E223055D1A00710599 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 953F56E123055D1A00710599 /* AppDelegate.m */; };
 		953F56E523055D1A00710599 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 953F56E423055D1A00710599 /* ViewController.m */; };
 		953F56E823055D1A00710599 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953F56E623055D1A00710599 /* Main.storyboard */; };
@@ -36,14 +36,6 @@
 		95345919230FBF6C00767E14 /* KVOCrashObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOCrashObject.m; sourceTree = "<group>"; };
 		9534592B231677CB00767E14 /* KVCCrashObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCCrashObject.h; sourceTree = "<group>"; };
 		9534592C231677CB00767E14 /* KVCCrashObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCCrashObject.m; sourceTree = "<group>"; };
-		953459312316AEBC00767E14 /* NSObject+MethodSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MethodSwizzling.h"; sourceTree = "<group>"; };
-		953459322316AEBC00767E14 /* NSObject+SelectorDefender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SelectorDefender.m"; sourceTree = "<group>"; };
-		953459332316AEBC00767E14 /* NSObject+SelectorDefender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SelectorDefender.h"; sourceTree = "<group>"; };
-		953459342316AEBC00767E14 /* NSObject+KVODefender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVODefender.h"; sourceTree = "<group>"; };
-		953459352316AEBC00767E14 /* NSObject+KVCDefender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVCDefender.h"; sourceTree = "<group>"; };
-		953459362316AEBC00767E14 /* NSObject+MethodSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodSwizzling.m"; sourceTree = "<group>"; };
-		953459372316AEBD00767E14 /* NSObject+KVODefender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVODefender.m"; sourceTree = "<group>"; };
-		953459382316AEBD00767E14 /* NSObject+KVCDefender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVCDefender.m"; sourceTree = "<group>"; };
 		9534594B231DF76900767E14 /* NotificationReceiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationReceiver.h; sourceTree = "<group>"; };
 		9534594C231DF76900767E14 /* NotificationReceiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationReceiver.m; sourceTree = "<group>"; };
 		95345962231F52B700767E14 /* TestUnrecognizedSelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestUnrecognizedSelVC.h; sourceTree = "<group>"; };
@@ -65,6 +57,14 @@
 		9534597E231F5C2700767E14 /* BaseDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseDefine.h; sourceTree = "<group>"; };
 		95345982231F619A00767E14 /* SelectorObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectorObject.h; sourceTree = "<group>"; };
 		95345983231F619A00767E14 /* SelectorObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectorObject.m; sourceTree = "<group>"; };
+		95345985231F791B00767E14 /* NSObject+SelectorDefender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SelectorDefender.h"; sourceTree = "<group>"; };
+		95345986231F791B00767E14 /* NSObject+SelectorDefender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SelectorDefender.m"; sourceTree = "<group>"; };
+		95345987231F791B00767E14 /* NSObject+KVCDefender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVCDefender.m"; sourceTree = "<group>"; };
+		95345988231F791B00767E14 /* NSObject+KVODefender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVODefender.m"; sourceTree = "<group>"; };
+		95345989231F791B00767E14 /* NSObject+KVCDefender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVCDefender.h"; sourceTree = "<group>"; };
+		9534598A231F791B00767E14 /* NSObject+MethodSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodSwizzling.m"; sourceTree = "<group>"; };
+		9534598B231F791B00767E14 /* NSObject+MethodSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MethodSwizzling.h"; sourceTree = "<group>"; };
+		9534598C231F791B00767E14 /* NSObject+KVODefender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVODefender.h"; sourceTree = "<group>"; };
 		953F56DD23055D1A00710599 /* YSC-Avoid-Crash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YSC-Avoid-Crash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		953F56E023055D1A00710599 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		953F56E123055D1A00710599 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,14 +91,14 @@
 		95345957231F4EC900767E14 /* YSCDefender */ = {
 			isa = PBXGroup;
 			children = (
-				953459312316AEBC00767E14 /* NSObject+MethodSwizzling.h */,
-				953459362316AEBC00767E14 /* NSObject+MethodSwizzling.m */,
-				953459332316AEBC00767E14 /* NSObject+SelectorDefender.h */,
-				953459322316AEBC00767E14 /* NSObject+SelectorDefender.m */,
-				953459342316AEBC00767E14 /* NSObject+KVODefender.h */,
-				953459372316AEBD00767E14 /* NSObject+KVODefender.m */,
-				953459352316AEBC00767E14 /* NSObject+KVCDefender.h */,
-				953459382316AEBD00767E14 /* NSObject+KVCDefender.m */,
+				9534598B231F791B00767E14 /* NSObject+MethodSwizzling.h */,
+				9534598A231F791B00767E14 /* NSObject+MethodSwizzling.m */,
+				95345985231F791B00767E14 /* NSObject+SelectorDefender.h */,
+				95345986231F791B00767E14 /* NSObject+SelectorDefender.m */,
+				9534598C231F791B00767E14 /* NSObject+KVODefender.h */,
+				95345988231F791B00767E14 /* NSObject+KVODefender.m */,
+				95345989231F791B00767E14 /* NSObject+KVCDefender.h */,
+				95345987231F791B00767E14 /* NSObject+KVCDefender.m */,
 			);
 			path = YSCDefender;
 			sourceTree = "<group>";
@@ -306,22 +306,22 @@
 				95345970231F531E00767E14 /* TestTimerCrashVC.m in Sources */,
 				9534591A230FBF6C00767E14 /* KVOCrashObject.m in Sources */,
 				953F56E523055D1A00710599 /* ViewController.m in Sources */,
-				9534593A2316AEBD00767E14 /* NSObject+MethodSwizzling.m in Sources */,
 				953F56F023055D1B00710599 /* main.m in Sources */,
 				9534594D231DF76900767E14 /* NotificationReceiver.m in Sources */,
 				95345984231F619A00767E14 /* SelectorObject.m in Sources */,
 				953F56E223055D1A00710599 /* AppDelegate.m in Sources */,
+				9534598D231F791B00767E14 /* NSObject+SelectorDefender.m in Sources */,
+				9534598E231F791B00767E14 /* NSObject+KVCDefender.m in Sources */,
 				9534592D231677CB00767E14 /* KVCCrashObject.m in Sources */,
-				9534593C2316AEBD00767E14 /* NSObject+KVCDefender.m in Sources */,
 				9534596D231F530100767E14 /* TestNotificationCrashVC.m in Sources */,
 				95345967231F52D000767E14 /* TestKVOCrashVC.m in Sources */,
 				9534596A231F52E900767E14 /* TestKVCCrashVC.m in Sources */,
 				95345964231F52B700767E14 /* TestUnrecognizedSelVC.m in Sources */,
+				95345990231F791B00767E14 /* NSObject+MethodSwizzling.m in Sources */,
 				95345973231F533200767E14 /* TestContainersVC.m in Sources */,
-				953459392316AEBD00767E14 /* NSObject+SelectorDefender.m in Sources */,
-				9534593B2316AEBD00767E14 /* NSObject+KVODefender.m in Sources */,
 				95345976231F534400767E14 /* TestNullVC.m in Sources */,
 				95345979231F57EE00767E14 /* BaseViewController.m in Sources */,
+				9534598F231F791B00767E14 /* NSObject+KVODefender.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
